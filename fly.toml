@@ -15,9 +15,6 @@ processes = []
 
 [env]
   PORT = "8080"
-  REDIS_DB= "0"
-  REDIS_URL= "redis://127.0.0.1"
-  REDIS_PORT= 6379
 
 [experimental]
   allowed_public_ports = []
@@ -25,7 +22,7 @@ processes = []
 
 [[services]]
   http_checks = []
-  internal_port = 6379
+  internal_port = 8080
   processes = ["app"]
   protocol = "tcp"
   script_checks = []
