@@ -32,7 +32,7 @@ gem "redis", "~> 4.0"
 gem 'redis-rails'
 gem 'redis-namespace'
 
-gem 'figaro'
+# gem 'figaro'
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
