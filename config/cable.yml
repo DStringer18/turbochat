@@ -6,5 +6,5 @@ test:
 
 production:
   adapter: redis
-  url: <%= Rails.application.credentials.REDIS_CABLE_URL %>:
+  url: <%= Rails.application.credentials.REDIS_CABLE_URL %>
   channel_prefix: turbochat_production
