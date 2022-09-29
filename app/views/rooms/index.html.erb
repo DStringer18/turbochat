@@ -1,6 +1,21 @@
+<%= turbo_frame_tag "appearance_channel" %>
+<div id="appearance_channel"></div>
+
 <div id="chatroom_container" class="row bg-dark text-light">
   <div id="side_panel" class="col-md-4 col-sm-4">
-    <h5><%= current_user.email %></h5>
+    <li>
+      <div class="icon-container">
+        <%= turbo_stream_from "user_status" %>
+
+        <div>
+          <%= render "users/status", user: current_user %>
+        </div>
+
+      </div>
+      <div>
+        <%= current_user.email %>
+      </div>
+    </li>
     <h4> Users </h4>
     <%= turbo_stream_from "users" %>
     <div id="users">

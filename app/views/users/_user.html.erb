@@ -1,3 +1,11 @@
 <div>
+  <div class="icon-container">
+    <%= turbo_stream_from "user_status" %>
+
+    <div>
+      <%= render "users/status", user: user %>
+    </div>
+
+  </div>
   <%= link_to user.email, user %>
 </div>
